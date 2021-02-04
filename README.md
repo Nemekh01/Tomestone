@@ -16,15 +16,24 @@ Hit `<api host>/sheets/{language}/{sheetName}/{rowId}[/{subRowId}}` and you get 
 
 examples
 
-##
+## Actions
 
+https://tomestone.akhmorning.com/sheets/english/action/23290
+
+## Statuses
+
+https://tomestone.akhmorning.com/sheets/english/status/2470
+
+## Items
+
+https://tomestone.akhmorning.com/sheets/english/item/29725
 
 # Languages
 
 Languages can be any of the following:
 
 |Language|Language ID|
-|---|---|
+|:--:|:--:|
 |`None`|0|
 |`Japanese`|1|
 |`English`|2|
