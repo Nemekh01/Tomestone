@@ -25,24 +25,15 @@ Languages can be any of the following:
 
 |Language|Language ID|
 |---|---|
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
+|`None`|0|
+|`Japanese`|1|
+|`English`|2|
+|`German`|3|
+|`French`|4|
+|`ChineseSimplified`|5|
+|`ChineseTraditional`|6|
+|`Korean`|7|
 
-* `None` or 0
-* `Japanese` or 1
-* `English` or 2
-* `German` or 3
-* `French` or 4
-* `ChineseSimplified` or 5
-* `ChineseTraditional` or 6
-* `Korean` or 7
-
-Note that korean and chinese support requires game files that come with those languages!
+Note that Korean and Chinese support requires the separate game files that come with those languages.
 
 **Final Fantasy XIV © 2010-2020 SQUARE ENIX CO., LTD. All Rights Reserved. We are not affiliated with SQUARE ENIX CO., LTD. in any way.**
