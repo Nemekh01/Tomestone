@@ -1,5 +1,6 @@
-# LuminaAPI Demo
-A quick demo of how you can make your very own API with Lumina. This has some issues but are largely fixable with minimal effort, all in less than 200 lines of code!!!
+# Tomestone
+
+Web API server implementation of Lumina with AWS Docker based off of Adam's demo.
 
 Some quick things:
 * Requires the `ffxiv/0a*` files to be located in the datapath you provide
@@ -24,3 +25,5 @@ Language can be any of the following:
 * `Korean` or 7
 
 Note that korean and chinese support requires game files that come with those languages!
+
+**Final Fantasy XIV © 2010-2020 SQUARE ENIX CO., LTD. All Rights Reserved. We are not affiliated with SQUARE ENIX CO., LTD. in any way.**
