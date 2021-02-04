@@ -14,17 +14,17 @@ Hit `<api host>/sheets/{language}/{sheetName}/{rowId}[/{subRowId}}` and you get 
 
 `subRowId` is optional and not required, only provide if you require it.
 
-examples
+## Examples
 
-## Actions
+### Actions
 
 https://tomestone.akhmorning.com/sheets/english/action/23290
 
-## Statuses
+### Statuses
 
 https://tomestone.akhmorning.com/sheets/english/status/2470
 
-## Items
+### Items
 
 https://tomestone.akhmorning.com/sheets/english/item/29725
 
