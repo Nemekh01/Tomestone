@@ -45,4 +45,6 @@ Languages can be any of the following:
 
 Note that Korean and Chinese support requires the separate game files that come with those languages.
 
+---
+
 **Final Fantasy XIV © 2010-2020 SQUARE ENIX CO., LTD. All Rights Reserved. We are not affiliated with SQUARE ENIX CO., LTD. in any way.**
