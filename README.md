@@ -12,9 +12,28 @@ Some quick things:
 # Usage
 Hit `<api host>/sheets/{language}/{sheetName}/{rowId}[/{subRowId}}` and you get data back.
 
-`subRowId` is optional and not required, only provide if you require it
+`subRowId` is optional and not required, only provide if you require it.
 
-Language can be any of the following:
+examples
+
+##
+
+
+# Languages
+
+Languages can be any of the following:
+
+|Language|Language ID|
+|---|---|
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+
 * `None` or 0
 * `Japanese` or 1
 * `English` or 2
