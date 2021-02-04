@@ -33,7 +33,7 @@ https://tomestone.akhmorning.com/sheets/english/item/29725
 Languages can be any of the following:
 
 |Language|Language ID|
-|:--:|:--:|
+|:--|:--:|
 |`None`|0|
 |`Japanese`|1|
 |`English`|2|
