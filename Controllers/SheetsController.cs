@@ -13,8 +13,7 @@ namespace LuminaAPI.Controllers
     {
         private readonly Lumina.Lumina _lumina;
         
-        // todo: this is so shit
-        // also not thread safe either l m a o
+        // not thread safe, revision to be added later
         private static Dictionary< string, Type > _sheetNameToTypes = null!;
         private static MethodInfo _getSheetT = null!;
 
@@ -50,7 +49,7 @@ namespace LuminaAPI.Controllers
                 return NotFound( "no typed sheet found with that name!" );
             }
 
-            // todo: T R U L Y C U R S E D
+            // revision to be added later
             var getSheetTyped = _getSheetT.MakeGenericMethod( sheetType );
             var sheet = getSheetTyped.Invoke( _lumina, new object[] { language } );
 
