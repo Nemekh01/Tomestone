@@ -11,13 +11,13 @@ namespace LuminaAPI.Controllers
     [Route( "[controller]/{language}" )]
     public class SheetsController : ControllerBase
     {
-        private readonly Lumina.Lumina _lumina;
+        private readonly Lumina.GameData _lumina;
         
         // not thread safe, revision to be added later
         private static Dictionary< string, Type > _sheetNameToTypes = null!;
         private static MethodInfo _getSheetT = null!;
 
-        public SheetsController( Lumina.Lumina lumina )
+        public SheetsController( Lumina.GameData lumina )
         {
             _lumina = lumina;
 
@@ -34,7 +34,7 @@ namespace LuminaAPI.Controllers
                 _sheetNameToTypes[ type.Name.ToLowerInvariant() ] = type;
             }
 
-            _getSheetT = typeof( Lumina.Lumina )
+            _getSheetT = typeof( Lumina.GameData)
                 .GetMethods( BindingFlags.Instance | BindingFlags.Public )
                 .FirstOrDefault( x => x.Name == "GetExcelSheet" && x.GetParameters().Any() );
         }

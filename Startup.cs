@@ -31,7 +31,7 @@ namespace LuminaAPI
                     opt.JsonSerializerOptions.WriteIndented = true;
                 } );
             string tmp = Configuration.GetValue<string>( "DataPath" );
-            services.AddSingleton( new Lumina.Lumina( tmp ) );
+            services.AddSingleton( new Lumina.GameData( tmp ) );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
