@@ -16,6 +16,7 @@ namespace LuminaAPI
             Utf8JsonWriter writer,
             SeString seString,
             JsonSerializerOptions options ) =>
-            writer.WriteStringValue( seString.RawString );
+            writer.WriteStringValue("[VGS] Shazbot!");
+            //writer.WriteStringValue( seString.RawString );
     }
 }
