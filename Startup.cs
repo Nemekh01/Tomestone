@@ -19,6 +19,8 @@ namespace LuminaAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices( IServiceCollection services )
         {
+            string tmp = Configuration.GetValue<string>("DataPath");
+            var luminaData = new Lumina.GameData(tmp);
             services
                 .AddControllers()
                 .AddJsonOptions(
@@ -26,12 +28,13 @@ namespace LuminaAPI
                 {
                     opt.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
                     opt.JsonSerializerOptions.IncludeFields = true;
-                    opt.JsonSerializerOptions.Converters.Add( new SeStringConverter() );
+                    opt.JsonSerializerOptions.Converters.Add( new SeStringConverter(luminaData) );
                     opt.JsonSerializerOptions.PropertyNamingPolicy = null;
                     opt.JsonSerializerOptions.WriteIndented = true;
                 } );
-            string tmp = Configuration.GetValue<string>( "DataPath" );
-            services.AddSingleton( new Lumina.GameData( tmp ) );
+            
+            services.AddSingleton( luminaData );
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
